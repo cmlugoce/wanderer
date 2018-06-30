@@ -1,5 +1,8 @@
-require "wanderer/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module Wanderer
-  # Your code goes here...
-end
+
+require_relative "wanderer/version"
+require_relative "wanderer/wander"
+require_relative "wanderer/cli"
