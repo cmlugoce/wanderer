@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "wanderer"
+require "../lib/wanderer/cli"
+
+
+
+
+Wanderer::CLI.new.call
