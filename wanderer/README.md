@@ -1,8 +1,8 @@
 # Wanderer
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/wanderer`. To experiment with that code, run `bin/console` for an interactive prompt.
+This Ruby gem provides the user a CLI to view a list of the top seashore US National Parks, sourced from Fodors website. This program will generate a list of parks and the user can select which park they would like to have more information about.
 
-TODO: Delete this and the text above, and describe your gem
+
 
 ## Installation
 
