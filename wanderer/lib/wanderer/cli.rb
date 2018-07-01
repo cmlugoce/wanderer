@@ -35,7 +35,7 @@ module Wanderer
            puts "Enter the number of the park to get a brief description".magenta.bold
            puts ""
            puts "Type 'list' to see the top seashore National Parks. Type 'ciao' to quit the program".red.bold
-           input = gets.strip
+           input = gets.strip.downcase
 
            if input.to_i > 0
             place = @places[input.to_i-1]
@@ -48,7 +48,7 @@ module Wanderer
            elsif input == "list"
                list_destination
              elsif input == 'ciao'
-               goodbye
+              # goodbye
            elsif
              puts "Invalid input. Please try again.".red.bold
            end
