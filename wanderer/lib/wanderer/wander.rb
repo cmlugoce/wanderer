@@ -18,7 +18,7 @@ module Wanderer
            trips = doc.css(".container.slides")
            trips.collect do |park|
              place = self.new
-             place.name = park.css('h2').text.strip.gsub("Book a Hotel", "").gsub("\n", "")
+             place.name = park.css('h2').text.strip.gsub("Book a Hotel", "").gsub("\n", "").strip
              place.location = park.css('h3 span').text.strip.gsub("\n", "")
              place.description = park.css("p").text
 
