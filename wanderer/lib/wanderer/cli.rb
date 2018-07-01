@@ -20,7 +20,7 @@ module Wanderer
        puts ""
        @places = Wanderer::Wander.get_page
        @places.each.with_index do |place, i|
-         puts "#{i+1}. #{place.name}"
+         puts "#{i+1}. #{place.name}, #{place.location}"
        end
      end
 
@@ -33,5 +33,3 @@ module Wanderer
   end #of class
 
 end #of module
-
-
