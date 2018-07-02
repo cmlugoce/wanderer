@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Cristina Lugo'"]
   spec.email         = ["'cmlugoce@syr.edu'"]
 
-  spec.summary       = %q{TOp travel destinations.}
+  spec.summary       = %q{Top long distance destinations.}
   spec.description   = %q{get inspire, travel.}
-  spec.homepage      = "https://github.com/cmlugoce."
+  spec.homepage      = "https://github.com/cmlugoce/wanderer."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
