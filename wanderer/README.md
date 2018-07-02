@@ -1,6 +1,6 @@
 # Wanderer
 
-This Ruby gem provides the user a CLI to view a list of the top seashore US National Parks, sourced from Fodors website. This program will generate a list of parks and the user can select which park they would like to have more information about.
+This Ruby gem provides the user a CLI to view a list of the top long hikes around the world, sourced from Fodors website. This program will generate a list of hikes and the user can select which park they would like to have more information about.
 
 
 
