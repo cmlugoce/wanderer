@@ -8,7 +8,7 @@ module Wanderer
 
   class Wander
 
-    attr_accessor :name, :location, :description, :distance
+    attr_accessor :name, :location, :description, :distance, :url
 
 
       def self.get_page
@@ -18,13 +18,15 @@ module Wanderer
            trips = doc.css(".container.slides")
            trips.collect do |hike|
              place = self.new
-             place.name = hike.css('h2').text.strip.gsub("Book a Hotel", "").gsub("\n", "").strip
-             place.location = hike.css('h3 span').text.strip.gsub("\n", "")
+             place.name = hike.css("h2").text.strip.gsub("Book a Hotel", "").gsub("\n", "").strip
+             place.location = hike.css("h3 span").text.strip.gsub("\n", "")
             place.distance = hike.css("p").children[1].text
              place.description = hike.css("p").children[2..20].text.strip.gsub("\n", "").strip
+             place.url = hike.css("a").attr("href").text
 
              place
              end
            end
+
          end
        end
