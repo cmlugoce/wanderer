@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run `bin/wander` to execute the gem.
 
 ## Development
 
