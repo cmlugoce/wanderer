@@ -15,9 +15,9 @@ module Wanderer
 
      def greeting
        puts ""
-       puts "--*--Not all those who wander are lost! --*--".magenta.bold
+       puts "--*--Not all who wander are lost! --*--".magenta.bold
        puts ""
-       puts "Welcome to Wander! Are you ready to check out the top 14 most beautiful National Parks?"
+       puts "Welcome to Wander! Are you ready to check out the top 15 long-distance hikes around the world?"
        puts ""
      end
 
@@ -34,7 +34,7 @@ module Wanderer
            puts ""
            puts "Enter the number of the park to get a brief description".magenta.bold
            puts ""
-           puts "Type 'list' to see the top seashore National Parks. Type 'ciao' to quit the program".red.bold
+           puts "Type 'list' to see return to the list. Type 'ciao' to quit the program".red.bold
            input = gets.strip.downcase
 
            if input.to_i > 0
@@ -42,6 +42,7 @@ module Wanderer
 
              puts "-- #{place.name} - #{place.location}-- ".green.bold
              puts ""
+             puts "Distance: #{place.distance}".yellow.bold
              puts ""
              puts "#{place.description}"
              puts ""
