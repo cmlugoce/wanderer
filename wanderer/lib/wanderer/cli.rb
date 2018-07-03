@@ -50,7 +50,7 @@ module Wanderer
            elsif input == "list"
                list_destination
              elsif input == 'bye'
-              # goodbye
+         
            elsif
              puts "Invalid input. Please try again.".red
            end
