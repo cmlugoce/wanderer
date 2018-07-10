@@ -34,7 +34,7 @@ module Wanderer
          while input != "bye"
            puts ""
            puts ""
-           puts "Type 'list' to see return to the list. Type 'bye' to quit the program".red.bold
+           puts "Type 'list' to return to the list. Type 'bye' to quit the program".red.bold
            input = gets.strip.downcase
 
            if input.to_i > 0 && input.to_i < 16
