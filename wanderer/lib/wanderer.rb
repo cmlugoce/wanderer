@@ -5,4 +5,5 @@ require 'pry'
 
 require_relative "wanderer/version"
 require_relative "wanderer/wander"
+require_relative "wanderer/scraper"
 require_relative "wanderer/cli"
