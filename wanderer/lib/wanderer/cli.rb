@@ -7,10 +7,10 @@ module Wanderer
 
     def call
        greeting
+       Wanderer::Scraper.get_page
        list_destination
        menu
        goodbye
-
      end
 
      def greeting
@@ -24,7 +24,8 @@ module Wanderer
 
      def list_destination
        puts ""
-       @places = Wanderer::Wander.get_page
+       @places = Wanderer::Wander.all
+
        @places.each.with_index do |place, i|
          puts "#{i+1}. #{place.name}, #{place.location}".blue
        end
@@ -38,7 +39,7 @@ module Wanderer
            input = gets.strip.downcase
 
            if input.to_i > 0 && input.to_i < 16
-            place = @places[input.to_i-1]
+             place = @places[input.to_i-1]
 
              puts "-- #{place.name} - #{place.location}-- ".green.bold
              puts ""
@@ -49,9 +50,9 @@ module Wanderer
 
            elsif input == "list"
                list_destination
-             elsif input == 'bye'
-         
-           elsif
+           elsif input == 'bye'
+
+           else
              puts "Invalid input. Please try again.".red
            end
          end
